@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+int main() 
+{
+    char nome[50];
+    int idade;
+
+    printf("Digite seu nome: ");
+    fgets(nome, sizeof(nome), stdin);
+
+    printf("Digite sua idade: ");
+    scanf("%d", &idade);
+
+    printf("\nCadastro completo!\n");
+    printf("Nome: %sIdade: %d\n", nome, idade);
+
+    return 0;
+}
